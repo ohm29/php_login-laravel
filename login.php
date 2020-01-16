@@ -7,7 +7,7 @@ session_start();
                   $Username = $_POST['Username'];
                   $Password = $_POST['Password'];
 				//query 
-                  $sql="SELECT * FROM User Where Username='".$Username."' and Password='".$Password."' ";
+                  $sql="SELECT * FROM admin Where 	user='".$Username."' and password='".$Password."' ";
 
                   $result = mysqli_query($con,$sql);
 				
@@ -15,9 +15,8 @@ session_start();
 
                       $row = mysqli_fetch_array($result);
 
-                      $_SESSION["UserID"] = $row["ID"];
-                      $_SESSION["User"] = $row["Name"]." ".$row["Department"];
-                      $_SESSION["status"] = $row["status"];
+                      $_SESSION["UserID"] = $row["id_user"];
+                      
 
                     
                         Header("Location: admin_page.php");

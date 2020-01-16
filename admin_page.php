@@ -31,7 +31,7 @@ if (!$_SESSION["UserID"]){  //check session
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                <?php  echo '<a class="nav-link" href="http://127.0.0.1:8000/project/' . $_SESSION["UserID"] . '">BOM</a>';?>
+                <?php  echo '<a class="nav-link" href="http://localhost/Zinecode-Project2/public/project/' . $_SESSION["UserID"] . '">Laravel</a>';?>
              
                 </li>
                 <li class="nav-item">
